@@ -1,0 +1,33 @@
+{
+  "name": "test-work",
+  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+  "keywords": ["telegram", "best", "Media", "cloning", "copying", "robot"],
+  "logo": "https://cdn.dribbble.com/users/1658045/screenshots/4999712/clonelogo-01.png",
+  "website": "https://github.com/MDROBOT512/test-work",
+  "repository": "https://github.com/MDROBOT512/test-work",
+  "env": {
+        "APP_ID": {"description": "Get this value from https://my.telegram.org", "value": "9844066"},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "value": "0d3f74056f1e60388d3317548799ee17"},
+        "TG_BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","value": "5162572062:AAEvGeB0qoU7y7E7Jei6Ow6Pw4Eq7RsunKs"},
+        "TG_USER_SESSION": {"description": "String Session from an admin user. Go to: t.ly/GxsB ","value": "BQAGWfOalwvHkMtr_LX1mxZMxXIR2W6uPuPZD9WOmSPQLsDG88wC7KVKK1AKGbb-60lc0pGR79sQCJBN_dnp361MRmh9uYAv59K726hWE_o5y69ck3py6GEMKy8wGd8mow0aJwLcmwa-bDF42uXso-wlj4HvdNZXVGXMWaRIsEfW3grf8i2Yt_0iDAGyF98-VwpqfjbfMBIDRGjEc6jm-7iHChunfTrEfBciKheLQeUtAfI6NRfhT_VXNUKC48FwBccq_SWN2v32VI0H_dYt1SJld3abjX2D4M2IqWvmKeWDSE44To4K1gvr6Is2nxGFCvdwGszW2LwFbTFiWe--ODbjaYcCeAA"},
+        "AUTH_USERS": {"description": "User ids of authorized users separated by space", "value": "1770455672"},
+        "ENV": {"description": "Set this to ANYTHING","value": "ANYTHING"}
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {"url": "heroku/python"}
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}

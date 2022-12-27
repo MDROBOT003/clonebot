@@ -1,0 +1,16 @@
+services:
+  drone-srcb:
+    build: .
+    environment:
+      API_ID: $API_ID  
+      API_HASH: $API_HASH  
+      TG_BOT_TOKEN: $TG_BOT_TOKEN
+      TG_USER_SESSION: $TG_USER_SESSION
+      AUTH_USERS: $AUTH_USERS
+      FORCESUB: $FORCESUB
+      ENV: $ANYTHING
+    ports:
+      - 8080
+    resources:
+      cpu: 1000m
+      memory: 3Gi
