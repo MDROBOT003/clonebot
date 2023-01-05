@@ -7,7 +7,6 @@ services:
       TG_BOT_TOKEN: $TG_BOT_TOKEN
       TG_USER_SESSION: $TG_USER_SESSION
       AUTH_USERS: $AUTH_USERS
-      FORCESUB: $FORCESUB
       ENV: $ENV
     ports:
       - 8080
