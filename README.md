@@ -23,7 +23,7 @@
 
 <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MDROBOT512/test-work)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MDROBOT003/clonebot)
 
 <br>
 
