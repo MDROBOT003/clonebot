@@ -9,7 +9,7 @@ services:
       AUTH_USERS: $AUTH_USERS
       ENV: $ENV
     ports:
-      - 8080
+      - 80:80
     resources:
       cpu: 1000m
       memory: 3Gi
