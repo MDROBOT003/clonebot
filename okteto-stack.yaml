@@ -8,7 +8,7 @@ services:
       TG_USER_SESSION: $TG_USER_SESSION
       AUTH_USERS: $AUTH_USERS
       ENV: $ENV
-      DB_URI: $DB_URI
+      DATABASE_URL: $DATABASE_URL
     ports:
       - 80:80
     resources:
