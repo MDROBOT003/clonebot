@@ -1,16 +1,14 @@
+version: "3.8"
 services:
-  drone-srcb:
+  worker:
     build: .
     environment:
-      APP_ID: $APP_ID  
-      API_HASH: $API_HASH  
-      TG_BOT_TOKEN: $TG_BOT_TOKEN
-      TG_USER_SESSION: $TG_USER_SESSION
-      AUTH_USERS: $AUTH_USERS
-      ENV: $ENV
-      DATABASE_URL: $DATABASE_URL
+      - TG_BOT_TOKEN=${TG_BOT_TOKEN}
+      - APP_ID=${APP_ID}
+      - API_HASH=${API_HASH}
+      - AUTH_USERS=${AUTH_USERS}
+      - TG_USER_SESSION=${TG_USER_SESSION}
+      - DB_URI=${DB_URI}
+
     ports:
       - 80:80
-    resources:
-      cpu: 1000m
-      memory: 3Gi
