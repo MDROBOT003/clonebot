@@ -11,9 +11,3 @@ COPY . /app
 #set a default command
 
 CMD python3 main.py
-
-COPY start.sh start.sh
-COPY app.py app.py
-EXPOSE 5000
-RUN chmod +x /app/start.sh
-ENTRYPOINT ["./start.sh"]
