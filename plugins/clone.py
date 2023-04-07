@@ -41,7 +41,7 @@ async def clone_medias(client: Bot, message: Message):
     if bool(clone_delay) == bool(1):
         delay = 300
     else:
-        delay = 00
+        delay = 60
     #
     if start_id > end_id:
         start_id = start_id ^ end_id
